@@ -1,0 +1,72 @@
+﻿
+<!--HOME INDEX-->
+
+<!--Main content-->
+<div class="row">
+    <div class="col-md-12" id="indexcontent">
+        @Html.Raw(ViewBag.Content)
+    </div>
+</div>
+<!--End of main content-->
+
+    <!--Section divider-->
+    <div class="row">
+        <hr id="divider"/>
+    </div>
+    <!--End of section divider-->
+
+<!--Info section-->
+<div class="row"style="font-size:18px;">
+    <!--Contact section-->
+    <div class="col-md-6">
+        <!--Email and Phone number section-->
+        <div class="row">
+            <div class="col-md-12"><h3><strong>Contact Us</strong></h3></div>
+            <div class="col-md-2">
+                Email:
+                <br />
+                Phone:
+            </div>
+            <div class="col-md-7">
+                @Html.Raw(ViewBag.EmailAndPhone)
+            </div>
+        </div>
+        <!--End of email and phone number section-->
+        <!--Address section-->
+        <div class="row">
+            <div class="col-md-12"><h4><strong>Correspondence Address:</strong></h4></div>
+            <div class="col-md-offset-1">
+                @Html.Raw(ViewBag.Address)
+            </div>
+        </div>
+        <!--End of address section-->
+    </div>
+    <!--End of Contact Section-->
+
+    <!--Opening hours section-->
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3><strong>
+                    Opening times
+                </strong></h3>
+            </div>
+            <div class="col-md-3">
+                Monday:
+                <br />
+                Tuesday:
+                <br />
+                Wednesday:
+                <br />
+                Thursday:
+                <br />
+                Friday:
+            </div>
+            <div class="col-md-6">
+                @Html.Raw(ViewBag.Times)
+            </div>
+        </div>
+    </div>
+    <!--End of opening hours section-->
+</div>
+<!--End of Info section-->
